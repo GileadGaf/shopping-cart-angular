@@ -1,9 +1,0 @@
-<ul class="product-list">
-    <ng-container *ngFor="let product of products">
-        <li>
-            <app-product-preview [product]="product">
-                <button class="btn" (click)="onUpdateCart(product._id)">{{updateCartBtnTitle}}</button>
-            </app-product-preview>
-        </li>
-    </ng-container>
-</ul>
