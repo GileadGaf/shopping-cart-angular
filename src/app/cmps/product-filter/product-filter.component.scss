@@ -1,0 +1,29 @@
+@import 'helpers';
+@import 'colors';
+.product-filter{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    .btn{
+        margin-inline: 20px;
+    }
+    .product-pages{
+    //    flex-basis: 300px;
+        display: flex;
+       gap: 20px;
+        align-items: center;
+        .product-page{
+            cursor: pointer;
+            border: 3px solid;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: $clr1;
+            &.selected{
+                background-color: $clr2;
+                color:$clr1;
+                font-weight: 700;
+                font-size: 1.5em;
+            }
+        }
+    }
+}

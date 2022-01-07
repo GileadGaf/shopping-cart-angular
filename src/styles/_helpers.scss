@@ -1,0 +1,42 @@
+@import 'colors';
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.title{
+  font-size: 2rem;
+  margin: 20px;
+  text-decoration: underline;
+}
+.btn{
+  border: 2px dotted;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  font-weight: 700;
+  color: $clr2;
+  background-color: $clr1;
+  transition: background-color 0.5s;
+  &:hover {
+    background-color: lighten($clr1, 20%);
+  }
+}

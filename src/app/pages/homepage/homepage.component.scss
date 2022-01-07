@@ -1,0 +1,19 @@
+@import 'helpers';
+.home-page{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    >*{
+        grid-column: 1/-1;
+    }
+
+    .product-list-container{
+        grid-column: 2;
+        text-align: center;
+    }
+  
+    img.hero{
+    //    max-height: 100%;
+       width: 100%;
+    //    object-fit: cover;
+    }
+}

@@ -1,0 +1,9 @@
+<section class="home-page">
+    <img src="./assets/imgs/hero.png" class="hero" alt="shopping mall">
+ <main class="product-list-container">
+    <h2 class="title">Our Products:</h2>
+    <app-product-list *ngIf="products$" [products]="products$|async" (onUpdateCart)="onUpdateCart($event)"></app-product-list>
+ </main>
+   <app-product-filter [pagesNum]="pagesNum" [currPage]="currPage" (onChangePage)="changePage($event)"
+   (onSelectPage)="selectPage($event)" ></app-product-filter>
+</section>

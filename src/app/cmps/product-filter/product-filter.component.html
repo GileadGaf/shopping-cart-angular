@@ -1,0 +1,10 @@
+<section class="product-filter">
+    <button *ngIf="pagesNum>1" class="btn btn-prev" (click)="onChangePage(-1)">Previous</button>
+    <ul class="product-pages">
+        <li class="product-page" [ngClass]="currPage===pageNum?'selected':''" *ngFor="let pageNum of productPages"
+            (click)="onSelectPage(pageNum)">
+            {{pageNum}}
+        </li>
+    </ul>
+    <button *ngIf="pagesNum>1" class="btn btn-next" (click)="onChangePage(1)">Next</button>
+</section>

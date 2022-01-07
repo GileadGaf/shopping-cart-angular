@@ -1,0 +1,10 @@
+<section class="cart">
+    <h2 class="title">Your Cart:</h2>
+    <app-product-list [products]="cartProducts" *ngIf="cartProducts?.length;else emptyCart" [isCartDisplayed]="true" (onUpdateCart)="onUpdateCart($event)" >
+    </app-product-list>
+    <ng-template #emptyCart>
+        <h3>Your cart is empty!</h3>
+    </ng-template>
+    <app-product-filter [pagesNum]="pagesNum" [currPage]="currPage" (onChangePage)="changePage($event)"
+   (onSelectPage)="selectPage($event)" ></app-product-filter>
+</section>
